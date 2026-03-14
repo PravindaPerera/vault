@@ -108,18 +108,19 @@
 
             <div class="service-overview" data-aos="fade-up" data-aos-delay="200">
               <div class="overview-header">
-                <span class="badge">Brandy & Cognac</span>
+                <span class="badge">Scotch</span>
                 <span class="badge">Premium Selection</span>
-                <h2>Remy Martin XO Cognac</h2>
+                <h2>Chivas Royal Salute 21 Yr Scotch Whisky</h2>
               </div>
               <p class="lead-text">
-                France - Cognac - 40% - Rémy Martin XO is their Cellar Master’s signature cognac, expertly blending up to 400 different eaux-de-vie. 
-                The Cellar Master’s art of blending allows them to express the full aromatic complexity of this XO Cognac Fine Champagne.
+                Scotland - 40% - Scotland- Powerful aromas of vanilla, toasted oak, baked cherries allude to a more subtle layer of cherry blossom, 
+                white raisin. Vanilla, dried apricot, a faint trace of smoke and biscuit appear on the palate. 
+                Chairman's trophy winner - 2013 Ultimate Spirits Challenge
               </p>
             </div>
 
             <div class="service-image-showcase" data-aos="zoom-in" data-aos-delay="300">
-              <img src="../assets/img/liquor-cabinet-images/7-Remy-Martin.png" alt="Web Development" class="img-fluid main-image">
+              <img src="../assets/img/liquor-cabinet-images/6-Royal-Salute.png" alt="Web Development" class="img-fluid main-image">
               <div class="image-overlay">
                 <!-- <div class="tech-stack">
                   <span class="tech-item">React</span>
@@ -139,67 +140,16 @@
 
   </main>
 
-  <footer id="footer" class="footer">
+  <!-- footer content -->
+  <div id="footer-placeholder"></div>
 
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-5 col-md-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">The Vault</span>
-          </a>
-          <p>A personal digital archive dedicated to curated collectibles, rare finds, timeless craftsmanship, and remarkable experiences capturing exceptional pieces, extraordinary destinations, and unforgettable journeys.</p>
-          <!-- <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div> -->
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <!-- <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul> -->
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../index.html#spirit-collection">Spirit Collection</a></li>
-            <!-- <li><a href="#">Product Management</a></li> -->
-            <!-- <li><a href="#">Marketing</a></li> -->
-            <!-- <li><a href="#">Graphic Design</a></li> -->
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <!-- <h4>Contact Us</h4>
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
-          <p>United States</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>info@example.com</span></p> -->
-        </div>
-
-      </div>
-    </div>
-
-    <div class="container copyright text-center mt-4">
-      <p>© <span>2026</span> <strong class="px-1 sitename">The Vault</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-
-
-
-  </footer>
+  <script>
+    fetch('../footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

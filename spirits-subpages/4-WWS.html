@@ -109,17 +109,22 @@
             <div class="service-overview" data-aos="fade-up" data-aos-delay="200">
               <div class="overview-header">
                 <span class="badge">Whiskey</span>
-                <h2>Starward Single Malt Australian Whisky</h2>
+                <span class="badge">Premium Selection</span>
+                <h2>World Whiskey Society 20 Year Cigar Blend</h2>
               </div>
               <p class="lead-text">
-                Australia - 48% - In a global first for Starward, they sourced barrels from world famous Lagavulin Distillery, 
-                still soaked in their distinctive Islay malt, and rested a finished red wine barrel aged whisky for a further 18 months. 
-                Tropical fruit collides with smokiness.
+                American Light Whisky Cigar Blend Gothic Edition | Aged 20 Years. 
+                Introducing the newest edition to the World Whiskey lineup: American Light Whisky Cigar Blend, made with six different cask finishes and aged for 20 years for your enjoyment.
+                This blend showcases a harmonious interplay of sweetness, spice, and richness, making its deep amber hues and depth of flavor an excellent companion for a fine cigar.
+                On the nose, experience a rich and complex bouquet, with notes of dried fruits, particularly figs and raisins from the PX Sherry and Madeira, balanced by the sweetness of caramel and toffee from the Cognac. Subtle spices from the tequila barrels enhance the aroma, alongside earthy notes reminiscent of aged tobacco leaves.
+                With each sip, a bold, luscious mouthfeel with flavors of dark chocolate and roasted nuts greets the palate. The rich sweetness from Tawny Port and PX Sherry provides depth, while hints of citrus and herbal undernotes from the Awamori add a unique twist. The complexity continues with layers of oak and soft spice harmonizing the blend.
+                The finish is long and warming, with lingering notes of dried fruit, dark caramel, and a hint of smokiness, perfectly complemented by a touch of citrus zest and oak from the barrel aging, leaving a pleasant aftertaste that invites another indulgence.
+                48% Alc. by Vol.
               </p>
             </div>
 
             <div class="service-image-showcase" data-aos="zoom-in" data-aos-delay="300">
-              <img src="../assets/img/liquor-cabinet-images/12-Starward.png" alt="Web Development" class="img-fluid main-image">
+              <img src="../assets/img/liquor-cabinet-images/4-WWS.png" alt="Web Development" class="img-fluid main-image">
               <div class="image-overlay">
                 <!-- <div class="tech-stack">
                   <span class="tech-item">React</span>
@@ -139,67 +144,16 @@
 
   </main>
 
-  <footer id="footer" class="footer">
+  <!-- footer content -->
+  <div id="footer-placeholder"></div>
 
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-5 col-md-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">The Vault</span>
-          </a>
-          <p>A personal digital archive dedicated to curated collectibles, rare finds, timeless craftsmanship, and remarkable experiences capturing exceptional pieces, extraordinary destinations, and unforgettable journeys.</p>
-          <!-- <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div> -->
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <!-- <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul> -->
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../index.html#spirit-collection">Spirit Collection</a></li>
-            <!-- <li><a href="#">Product Management</a></li> -->
-            <!-- <li><a href="#">Marketing</a></li> -->
-            <!-- <li><a href="#">Graphic Design</a></li> -->
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <!-- <h4>Contact Us</h4>
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
-          <p>United States</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>info@example.com</span></p> -->
-        </div>
-
-      </div>
-    </div>
-
-    <div class="container copyright text-center mt-4">
-      <p>© <span>2026</span> <strong class="px-1 sitename">The Vault</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-
-
-
-  </footer>
+  <script>
+    fetch('../footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
