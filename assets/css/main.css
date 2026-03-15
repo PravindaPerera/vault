@@ -4258,3 +4258,48 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+.ledger-count {
+  margin: 12px 0 18px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ff4d4f;
+  text-align: center;
+}
+
+.spirit-tile {
+  background: #121212;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 24px 20px 20px;
+  text-align: center;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.spirit-tile:hover {
+  transform: translateY(-5px);
+  /* border-color: rgba(255,255,255,0.18); */
+  border-color: var(--accent-color);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.spirit-image {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.spirit-image img {
+  max-height: 100%;
+  max-width: 90%;
+  object-fit: contain;
+}
+
+.spirit-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}

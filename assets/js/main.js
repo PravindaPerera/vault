@@ -215,6 +215,11 @@
   });
 
   /**
+   * Initiate Pure Counter 
+   */
+  new PureCounter();
+
+  /**
    * Navmenu Scrollspy
    */
   let navmenulinks = document.querySelectorAll('.navmenu a');
