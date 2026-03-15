@@ -8,16 +8,16 @@ const isLocalhost =
 
 const basePath = isLocalhost ? "/" : `/${REPO_NAME}/`;
 
-fetch(basePath + "footer.html")
+fetch(basePath + "header.html")
   .then(response => response.text())
   .then(data => {
-    const footer = document.getElementById("footer-placeholder");
-    footer.innerHTML = data;
+    const header = document.getElementById("header-placeholder");
+    header.innerHTML = data;
 
-    footer.querySelectorAll("a[data-href]").forEach(link => {
+    header.querySelectorAll("a[data-href]").forEach(link => {
       link.href = basePath + link.getAttribute("data-href");
     });
   })
-  .catch(error => console.error("Error loading footer:", error));
+  .catch(error => console.error("Error loading header:", error));
 
 })();
